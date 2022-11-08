@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Passero;
+    font-family: 'Passero';
     src: url(../fonts/passero-one-cyrillic.ttf);
 }
 #map {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 20px);
     width: 100%;
  }
 
@@ -27,7 +27,8 @@ li{
 }
 
 a{
-    margin: 0px;
+    padding: 0px;
+    margin: 0px auto;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 1px 2px 1px rgb(51, 51, 51);
@@ -38,96 +39,40 @@ a:hover{
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
 nav{
-    font-family: Passero;
-    letter-spacing: 10px;
-    margin: 0px auto;
+    margin-top: 2px;
+    position: absolute;
+    font-family: 'Passero';
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 100;
+    top: 0;
+    width: 100%;
 }
 
-.navbar{
-    background: radial-gradient(circle, rgba(207, 31, 0, 0.712), rgba(241, 70, 2, 0.719), rgba(255, 0, 0, 0.596));
-}
+.nav_link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    background-color: rgba(243, 243, 243, 0.203);
+    border-radius: 50px;
+} 
 
 .navs{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    max-width: 1000px;
-    background: rgba(255, 255, 255, 0.1);
+    align-items:center;
+    background: radial-gradient(circle, rgba(252, 71, 0, 0.712),rgba(219, 0, 47, 0.603));
     border-radius: 50px;
     margin: 0px auto;
 }
-
-.navs li{
-    font-size: 30px;
-    display: inline;
-    text-transform: uppercase;
-    margin-right:  50px ;
-}
-
-/* ABOUT US ABOUT US ABOUT US ABOUT US */
-/* ABOUT US ABOUT US ABOUT US ABOUT US */
-/* ABOUT US ABOUT US ABOUT US ABOUT US */
-/* ABOUT US ABOUT US ABOUT US ABOUT US */
-
-/* body.about{
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.99), rgb(0, 0, 0));
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.about h1 {
-text-align: center;
-}
-.about{
-    font-family: 'Roboto Thin';
-    color: white;
-    max-width: 800px;
-    margin: 0px auto;
-    text-shadow: 1px 1px 1px black;
-}
-.about .logo {
-    margin: 0px auto;
-    width: 400px;
-    border-radius: 50px;
-    background: radial-gradient(circle, rgb(255, 102, 0), red);
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.about .idea {
-    margin-top: 50px;
-}
-
-.member{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 200px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.103);
-    border-radius: 10px;
-    border-radius: 10px;
-}
-
-
-.members{
-    display: flex;
-    justify-content: space-around;
-}
-
-.competitors img{
-    margin-right: 20px;
-    border-radius: 20%;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
-}
-
-.gdeshaverma{
+.logo a{
     display: flex;
     align-items: center;
-} */
+}
