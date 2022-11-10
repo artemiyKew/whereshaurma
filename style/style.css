@@ -40,12 +40,12 @@ a:hover{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
 nav{
-    margin-top: 12px;
+    margin-top: 0px;
     position: absolute;
     font-family: 'Passero';
     font-size: 30px;
@@ -70,7 +70,7 @@ nav{
     justify-content: space-around;
     align-items:center;
     background: radial-gradient(circle, rgba(255, 136, 0, 0.74),rgba(190, 0, 95, 0.699));
-    border-radius: 50px;
+    border-radius: 0px 0px 50px 50px;
     margin: 0px auto;
 }
 .logo a{
