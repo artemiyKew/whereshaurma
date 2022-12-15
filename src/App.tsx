@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import YmapsComponent from "./components/map/Map";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/navbar/NavigationBar";
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutUs from "./components/aboutUs/AboutUs";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <NavigationBar />
+        <div className="App">
+          <header className="App-header">
+            <Routes>
+              <Route path="/" element={<YmapsComponent />}>
+              </Route>
+              <Route path="/aboutus" element={<AboutUs />}>
+              </Route>
+            </Routes>
+          </header>
+        </div>
+      </Fragment>
+    </Router>
   );
 }
-
-export default App;
