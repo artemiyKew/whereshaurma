@@ -10,11 +10,14 @@
 
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
   margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 0 40px;
 }
-
+.competitor {
+  list-style-type: none;
+  text-align: left;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
